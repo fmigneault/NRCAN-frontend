@@ -1,0 +1,100 @@
+:global {
+  @import "base";
+  @import "~normalize.css/normalize";
+
+  // Some best-practice CSS that's useful for most apps
+  // Just remove them if they're not what you want
+  html {
+    box-sizing: border-box;
+  }
+
+  h3{
+    margin-top: 0;
+  }
+
+  html,
+  body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    background-color: black;
+  }
+
+  .btn, .input-group-btn .btn {
+    padding: 8px 15px;
+  }
+
+  *,
+  *:before,
+  *:after {
+    box-sizing: inherit;
+  }
+
+  @media (min-width: 1400px){
+    .container {
+      width: 1370px;
+    }
+  }
+
+  .hidden {
+    visibility: collapse;
+  }
+
+  .container{
+    width: 100% !important;
+  }
+
+  .panel {
+    background-color: inherit;
+    color: #ffffff !important;
+    .panel-heading {
+      color: #ffffff !important;
+      background-color: rgba(0, 0, 0, 0.5) !important;
+    }
+    .panel-body{
+      background-color: rgba(0, 0, 0, 0.3);
+      padding: 5px;
+    }
+  }
+
+  .notification-container {
+    top: auto !important;
+    bottom: 10px !important;
+    right: 20px !important;
+    width: 500px !important;
+    padding: 0 !important;
+  }
+
+  #cesiumDiv {
+    width: 100%;
+    height: 100%;
+  }
+
+  .cesium-widget {
+    position: relative;
+  }
+
+  .cesium-widget, .cesium-widget canvas {
+    width: 100%;
+    height: 100%;
+  }
+
+  ul li {
+    text-align: left;
+    list-style-type: none;
+  }
+
+  /* Openlayers overwrite, TODO: Shouldn't be here */
+  .ol-zoom {
+    top: auto !important;
+    bottom: .5em !important;
+  }
+
+  .ol-control {
+    /*padding: 0 !important;
+    background-color: #FFF !important;
+    border: 1px solid #ddd !important;
+    border-radius: 4px !important;*/
+  }
+
+}
